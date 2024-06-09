@@ -21,7 +21,7 @@ export const EXPERIENCES = [
     company: "The Website Makers",
     description: `Collaborated with a dynamic team at Website Makers during an internship, contributing to the successful fulfillment of client
                   demands for website development.`,
-    technologies: ["HTML", "Javascript", "React", "WordPress", "Tailwind" ],
+    technologies: ["HTML", "Javascript", "React", "WordPress"],
   },
   {
     year: "July 2022 - Aug 2023",
@@ -41,7 +41,7 @@ export const PROJECTS = [
     description:
       "Developed a Movie Streaming Web App featuring ChatGPT integration for personalized movie recommendations. Utilized the TMDB API for extensive movie data and implemented Firebase for a secure backend and user authentication. Enhanced user engagement with a robust login/signup system.",
     technologies: ["HTML", "tailwind", "React", "Redux", "Firebase"],
-    path: "https://flixygpt.netlify.app/"
+    path: "https://github.com/iamvishukr/flixGPT-main"
   },
   {
     title: "MeTUBE",
