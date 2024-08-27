@@ -108,6 +108,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <button
+              onSubmit={sendEmail}
                 type="submit"
                 className="text-white md:ml-[40%] ml-[25%] bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
               >
