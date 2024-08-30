@@ -27,8 +27,7 @@ const Contact = () => {
     }
 
     try {
-      // Make a POST request to the serverless function
-      const response = await axios.post("https://vishalkumarport.vercel.app/api/sendEmail", {
+      const response = await axios.post("https://vishalkumarport.vercel.app/send-email", {
         user_email,
         user_name,
         message,
