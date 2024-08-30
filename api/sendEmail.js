@@ -1,39 +1,42 @@
-import axios from "axios";
+const express = require('express');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+require('dotenv').config();
 
-export default async function handler(req, res) {
-  if (req.method === "POST") {
-    const { userEmail, userName, message } = req.body;
+const app = express();
+app.use(bodyParser.json());
 
-    const emailData = {
-      from: userEmail,
-      to: "your_recipient_email@example.com", // Replace with your recipient email
-      subject: "New Contact Us Message",
-      html: `
-        <h2>You got a new message from ${userName}:</h2>
-        <p>${message}</p>
-        <p>User Email: ${userEmail}</p>
-      `,
+app.post('/send-email', (req, res) => {
+    console.log(req.body);
+    const { user_email , user_name , message  } = req.body;
+
+    const msg = `Email: ${user_email} | User Name: ${user_name} | Message: ${message}`;
+
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        secure: true,
+        port: 465,
+        auth: {
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,  // your email password
+        },
+    });
+
+    let mailOptions = {
+        from: 'vishals.dustbin@gmail.com',
+        to: 'iamvishukr@gmail.com',
+        subject: 'Portfolio Contact',
+        text: msg,
     };
 
-    try {
-      const response = await axios.post("https://api.resend.com/emails", emailData, {
-        headers: {
-          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-      });
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return res.status(500).send(error.toString());
+        }
+        res.status(200).send('Email sent: ' + info.response);
+    });
+});
 
-      if (response.status === 200 || response.status === 201) {
-        res.status(200).json({ message: "Email sent successfully!" });
-      } else {
-        res.status(response.status).json({ error: "Failed to send email." });
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-      res.status(500).json({ error: "Failed to send email." });
-    }
-  } else {
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
-  }
-}
+app.listen(3001, () => {
+    console.log('Server is running on port 3001');
+});

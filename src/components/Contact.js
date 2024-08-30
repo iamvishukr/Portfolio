@@ -15,11 +15,11 @@ const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    const userEmail = form.current.user_email.value;
-    const userName = form.current.user_name.value;
+    const user_email = form.current.user_email.value;
+    const user_name = form.current.user_name.value;
     const message = form.current.message.value;
 
-    if (!validateEmail(userEmail)) {
+    if (!validateEmail(user_email)) {
       setEmailError("Please enter a valid email address.");
       return;
     } else {
@@ -29,8 +29,8 @@ const Contact = () => {
     try {
       // Make a POST request to the serverless function
       const response = await axios.post("https://your-deployment-url/api/sendEmail", {
-        userEmail,
-        userName,
+        user_email,
+        user_name,
         message,
       });
 
