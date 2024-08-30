@@ -7,7 +7,7 @@ const app = express();
 
 
 const corsOptions = {
-    origin: 'https://portfolio-client-six-beryl.vercel.app/', 
+    origin: 'https://portfolio-client-six-beryl.vercel.app', 
     optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
