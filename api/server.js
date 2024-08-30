@@ -7,7 +7,13 @@ const sendEmail = require('./sendEmail'); // Import the sendEmail route
 const app = express();
 
 // Use middlewares
-app.use(cors()); // Enable CORS
+const corsOptions = {
+    origin: 'https://vishalkumarport.vercel.app/', // Replace with your actual frontend URL
+    optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
+app.use(cors(corsOptions)); // Enable CORS
 app.use(bodyParser.json()); // Parse JSON bodies
 
 // Define your routes
