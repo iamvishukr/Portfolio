@@ -5,7 +5,6 @@ require('dotenv').config();
 const router = express.Router();
 
 router.post('/', (req, res) => {
-    console.log(req.body);
     const { user_email, user_name, message } = req.body;
 
     const msg = `Email: ${user_email} | User Name: ${user_name} | Message: ${message}`;
@@ -16,12 +15,12 @@ router.post('/', (req, res) => {
         port: 465,
         auth: {
             user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS, 
+            pass: process.env.EMAIL_PASS,
         },
     });
 
     let mailOptions = {
-        from: 'vishals.dustbin@gmail.com',
+        from: process.env.EMAIL_USER, // use your email
         to: 'iamvishukr@gmail.com',
         subject: 'Portfolio Contact',
         text: msg,

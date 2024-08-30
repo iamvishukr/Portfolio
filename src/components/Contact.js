@@ -27,7 +27,8 @@ const Contact = () => {
     }
 
     try {
-      const response = await axios.post("https://vishalkumarport.vercel.app/send-email", {
+      // Use the appropriate URL based on the environment
+      const response = await axios.post("https://vishalkumarport.vercel.app/api/sendEmail", {
         user_email,
         user_name,
         message,
