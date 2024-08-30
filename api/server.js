@@ -1,23 +1,28 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const sendEmail = require('./sendEmail');
+const sendEmail = require('./sendEmail'); 
 
 const app = express();
 
-// Set up CORS to allow requests from your frontend URL
-const corsOptions = {
-    origin: 'https://vishalkumarport.vercel.app', // Your Vercel domain
-    optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
 
-app.use(bodyParser.json());
+// const corsOptions = {
+//     origin: 'https://vishalkumarport.vercel.app', 
+//     optionsSuccessStatus: 200,
+// };
+app.use(cors("*"));
+app.use(bodyParser.json()); 
 
-// Use the /api prefix to match your deployment needs
-app.use('/api/sendEmail', sendEmail);
+app.use('/send-email', sendEmail); 
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.use((req, res, next) => {
+    if (req.headers['x-forwarded-proto'] !== 'https') {
+        return res.redirect(`https://${req.headers.host}${req.url}`);
+    }
+    next();
+});
+
+
+app.listen(3001, () => {
+    console.log('Server is running on port 3001');
 });
