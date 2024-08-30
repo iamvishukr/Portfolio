@@ -1,14 +1,12 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const app = express();
-app.use(bodyParser.json());
+const router = express.Router();
 
-app.post('/send-email', (req, res) => {
+router.post('/', (req, res) => {
     console.log(req.body);
-    const { user_email , user_name , message  } = req.body;
+    const { user_email, user_name, message } = req.body;
 
     const msg = `Email: ${user_email} | User Name: ${user_name} | Message: ${message}`;
 
@@ -37,6 +35,4 @@ app.post('/send-email', (req, res) => {
     });
 });
 
-app.listen(3001, () => {
-    console.log('Server is running on port 3001');
-});
+module.exports = router;
