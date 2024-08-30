@@ -7,7 +7,7 @@ const app = express();
 
 
 const corsOptions = {
-    origin: 'http://vishalkumarport.vercel.app', 
+    origin: 'https://vishalkumarport.vercel.app', 
     optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
