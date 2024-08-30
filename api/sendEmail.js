@@ -4,6 +4,10 @@ require('dotenv').config();
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+    res.send('hello test');
+});
+
 router.post('/', (req, res) => {
     console.log(req.body);
     const { user_email, user_name, message } = req.body;
