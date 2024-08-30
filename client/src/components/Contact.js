@@ -110,7 +110,7 @@ const Contact = () => {
               </button>
             </form>
             {formMessage && (
-              <p className="text-yellow-500 text-sm mt-4">{formMessage}</p>
+              <p className="text-yellow-500 text-sm mt-4 p-2">{formMessage}</p>
             )}
           </div>
         </div>
