@@ -1,4 +1,3 @@
-import React from "react";
 import { ABOUT_TEXT } from "../constants";
 import about from "../assets/about.png";
 import { motion } from "framer-motion";

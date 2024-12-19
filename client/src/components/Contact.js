@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
-import coffee from "../assets/coffee2.jpg";
+import coffee from "../assets/coffee1.jpg";
 
 const Contact = () => {
   const form = useRef();

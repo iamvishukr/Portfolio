@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project0 from "../assets/projects/project-0.png";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
 
@@ -27,8 +27,8 @@ export const EXPERIENCES = [
     technologies: ["HTML", "Javascript", "React", "WordPress"],
   },
   {
-    year: "July 2022 - Aug 2023",
-    role: "Web Developer",
+    year: "July 2022 - Apr 2023",
+    role: "Scholar Trainee",
     company: "Wipro",
     description: `I worked as a web developer, where I focused on building and enhancing components for various projects using React and JavaScript. My role involved creating responsive and user-friendly interfaces, ensuring that everything was seamless and efficient. `,
     technologies: ["React", "Javascript", "HTML", "Tailwind", "Redux"],
@@ -37,27 +37,19 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Portfolio Website",
-    image: project4,
-    description:
-      " Designed and developed a modern portfolio website using React, Tailwind CSS, and Framer Motion. The site showcases my projects and skills through a visually appealing and highly interactive user interface. Utilizing Tailwind for streamlined styling and Framer Motion for smooth animations, this portfolio highlights my expertise in front-end development and attention to detail in creating engaging user experiences.",
-    technologies: ["HTML", "Tailwind", "React", "Framer Motion"],
-    path: "",
+    title: "CraveExpress",
+    image: project0,
+    description:"Developed Crave Express , a food delivery platform, utilizing the  Swiggy's API for real-time data on menus, restaurant availability, and  delivery options",
+    technologies: ["HTML", "tailwind", "React", "Redux"],
+    path: "https://craveexpress.netlify.app/",
   },
   {
-    title: "Musix",
-    image: project6,
+    title: "flixGPT",
+    image: project1,
     description:
-      "Musix is a music school website designed to showcase a variety of courses for aspiring musicians. Built using Next.js and Accertinity UI, the site features an engaging and user-friendly interface. It's important to note that Musix is currently for demonstration purposes only, and its features are not functional.",
-    technologies: ["NextJs", "Tailwind", "Accertinity UI"],
-    path: "https://musix-steel.vercel.app/",
-  },
-  {
-    title: "Quiz-Application",
-    image:project5,
-    description: "A simple and interactive quiz application using JavaScript, HTML, and CSS. The app features multiple-choice questions and keeps track of the user's score as they progress through the quiz.",
-    technologies: ["HTML", "CSS", "javascript"],
-    path:"https://quiz-js.netlify.app/"
+    "Developed a Movie Rating Web App like IMDB featuring ChatGPT integration for personalized movie recommendations. Utilized the TMDB API for extensive movie data and implemented Firebase for a secure backend and user authentication. Enhanced user engagement with a robust login/signup system.",
+    technologies: ["HTML", "tailwind", "React", "Redux", "Firebase"],
+    path: "https://github.com/iamvishukr/flixGPT-main",
   },
   {
     title: "MeTUBE",
@@ -68,20 +60,27 @@ export const PROJECTS = [
     path: "https://github.com/iamvishukr/Youtube-spin-off",
   },
   {
+    title: "Quiz-Application",
+    image:project5,
+    description: "A simple and interactive quiz application using JavaScript, HTML, and CSS. The app features multiple-choice questions and keeps track of the user's score as they progress through the quiz.",
+    technologies: ["HTML", "CSS", "javascript"],
+    path:"https://quiz-js.netlify.app/"
+  },
+  {
     title: "CRYPt Core",
     image: project3,
     description:
       "Developed a comprehensive cryptocurrency tracking application using React. This app provides real-time data on various cryptocurrencies, including their current prices, market capitalizations, and other key details. The intuitive and user-friendly interface allows users to easily monitor and compare different coins, making it an essential tool for anyone interested in the crypto market.",
-    technologies: ["HTML", "CSS", "React"],
+      technologies: ["HTML", "CSS", "React"],
     path: "https://github.com/iamvishukr/CRYPtcore",
   },
     {
-      title: "flixGPT",
-      image: project1,
+      title: "Musix",
+      image: project6,
       description:
-        "Developed a Movie Streaming Web App featuring ChatGPT integration for personalized movie recommendations. Utilized the TMDB API for extensive movie data and implemented Firebase for a secure backend and user authentication. Enhanced user engagement with a robust login/signup system.",
-      technologies: ["HTML", "tailwind", "React", "Redux", "Firebase"],
-      path: "https://github.com/iamvishukr/flixGPT-main",
+        "Musix is a music school website designed to showcase a variety of courses for aspiring musicians. Built using Next.js and Accertinity UI, the site features an engaging and user-friendly interface. It's important to note that Musix is currently for demonstration purposes only, and its features are not functional.",
+      technologies: ["NextJs", "Tailwind", "Accertinity UI"],
+      path: "https://musix-steel.vercel.app/",
     },
 ];
 
