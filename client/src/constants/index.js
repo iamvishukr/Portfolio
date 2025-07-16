@@ -19,21 +19,27 @@ Feel free to explore my portfolio to see some of the exciting projects I've work
 
 export const EXPERIENCES = [
   {
-    year: "Nov 2023 - Jan 2024",
-    role: "Frontend Developer Intern",
-    company: "The Website Makers",
-    description: `Collaborated with a dynamic team at Website Makers during an internship, contributing to the successful fulfillment of client
-                  demands for website development.`,
+    year: "Dec 2023 - Jun 2025",
+    role: "Frontend Developer",
+    company: "E-Vidyut",
+    description: `Developed and optimized user interfaces using React.js and Tailwind Css. 
+    Improved website performance, reducing load time by 30% using lazy loading and efficient state management
+ with Redux Toolkit. Led the revamp of the company’s dashboard, enhancing usability and visual appeal, resulting in a 20% increase
+ in customer retention. Integrated RESTful APIs and worked closely with backend teams to improve data flow and application stability`,
     technologies: ["HTML", "Javascript", "React", "WordPress"],
   },
   {
     year: "July 2022 - Apr 2023",
     role: "Scholar Trainee",
     company: "Wipro",
-    description: `I worked as a web developer, where I focused on building and enhancing components for various projects using React and JavaScript. My role involved creating responsive and user-friendly interfaces, ensuring that everything was seamless and efficient. `,
+    description: `Created reusable custom UI components in React and JavaScript, supporting multiple large-scale projects across
+ the organization. Boosted scalability by 50% through the development of reusable React components, optimizing front-end pro
+cesses and reducing development time. Enhanced accessibility and visual appeal by 40% by implementing responsive UI components, improving user
+ experience.`,
     technologies: ["React", "Javascript", "HTML", "Tailwind", "Redux"],
   },
 ];
+
 
 export const PROJECTS = [
   {
