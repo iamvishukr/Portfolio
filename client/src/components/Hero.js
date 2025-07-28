@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/profilepic1.png";
+import profilePic from "../assets/profilepic2.png";
 import { motion } from "framer-motion";
 import { useSpring } from "framer-motion";
 
