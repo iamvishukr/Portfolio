@@ -5,6 +5,7 @@ import project3 from "../assets/projects/project-3.jpg";
 import project0 from "../assets/projects/project-0.png";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
+import project7 from "../assets/projects/project-7.png";
 
 
 export const HERO_CONTENT = `Hi! I'm a front-end developer who loves bringing web applications to life with React.js. I have a knack for creating responsive, high-performance sites that offer a seamless user experience. With strong skills in HTML, CSS, and JavaScript, I take pride in writing clean, maintainable code that makes designs shine. Take a look at my portfolio to see some of the projects I've worked on and how I blend creativity with technical know-how to build great web solutions.`;
@@ -42,6 +43,14 @@ cesses and reducing development time. Enhanced accessibility and visual appeal b
 
 
 export const PROJECTS = [
+  {
+  title: "WolfBot",
+  image: project7, 
+  description: "Built WolfBot, a playful chatbot interface made with React and Tailwind CSS. Designed as a fun personal project where the chatbot character 'Wolfie' responds through a clean, animated UI.",
+  technologies: ["React", "Tailwind CSS", "Vite"],
+  path: "https://wolfiebot.vercel.app/", 
+},
+
   {
     title: "CraveExpress",
     image: project0,
