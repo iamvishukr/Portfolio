@@ -33,7 +33,7 @@ const About = () => {
             animate="animate"
             className="flex items-center justify-center"
           >
-            <img className="rounded-full" src={about2} alt="" />
+            <img className="rounded-full" src={about} alt="" />
           </motion.div>
         </motion.div>
         <motion.div
