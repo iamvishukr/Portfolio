@@ -1,5 +1,5 @@
 import { ABOUT_TEXT } from "../constants";
-import about from "../assets/about.png";
+import about from "../assets/about2.png";
 import { motion } from "framer-motion";
 const About = () => {
   const iconVariants = (duration) => ({
@@ -33,7 +33,7 @@ const About = () => {
             animate="animate"
             className="flex items-center justify-center"
           >
-            <img className="rounded-full" src={about} alt="" />
+            <img className="rounded-full" src={about2} alt="" />
           </motion.div>
         </motion.div>
         <motion.div
