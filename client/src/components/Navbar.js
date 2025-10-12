@@ -25,13 +25,13 @@ const Navbar = () => {
         <a href="https://www.instagram.com/iamvishukr/">
           <FaInstagram className="hover:cursor-pointer" />
         </a>
-        <a
-                href={resume}
-                download="Vishal_Resume.pdf"
-                className="text-black  border-2 py-2 px-6 focus:outline-none bg-yellow-500 border-yellow-600 rounded text-lg w-full text-center"
-              >
-                Download Resume
-        </a>
+      <a
+          href={resume}
+          download="Vishal_Resume.pdf"
+          className="text-black border-2 py-2 px-6 focus:outline-none bg-yellow-500 border-yellow-600 rounded text-lg text-center w-full sm:w-auto"
+        >
+          Download Resume
+      </a>
       </div>
     </nav>
   );
