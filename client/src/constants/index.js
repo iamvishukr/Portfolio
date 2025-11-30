@@ -22,38 +22,39 @@ export const EXPERIENCES = [
     year: "Aug 2025 - Nov 2025",
     role: "Frontend Developer (Freelance)",
     company: "Studio7",
-    description: `Built a complete ERP system for inventory, clients, invoices, and task tracking. Implemented a modular component architecture to ensure scalability and future expansion.`,
+    description: `Built a complete ERP system for inventory, clients, invoices, and task tracking. Implemented a modular component architecture to ensure scalability and easy future expansion.`,
     technologies: ["React.js", "Redux", "Component Architecture"],
   },
   {
-    year: "Nov 2024 - Apr 2025",
+    year: "Aug 2024 - Oct 2024",
     role: "Frontend Developer (Contract)",
-    company: "PW (PhysicsWallah)",
-    description: `Developed interactive UI components for internal LMS dashboards using React.js and Redux Toolkit. Optimized rendering and API calls, reducing page load time by 38%. Collaborated with backend teams to integrate real-time student data and enhance performance for high-traffic pages.`,
-    technologies: ["React.js", "Redux Toolkit", "API Optimization"],
+    company: "AxionPoint Technologies",
+    description: `Built a React-based dashboard for project management and reporting. Integrated REST APIs and created interactive charts for analytics. Optimized UI performance and ensured full mobile responsiveness.`,
+    technologies: ["React.js", "REST APIs", "Charts"],
   },
   {
     year: "Feb 2024 - Jul 2024",
     role: "Frontend Developer (Contract)",
-    company: "Byju’s",
-    description: `Revamped the onboarding UI for the student learning app using React.js, Context API, and Tailwind CSS. Built a modular component library to standardize design across multiple Byju’s products. Implemented role-based UI restrictions and secure frontend routing.`,
-    technologies: ["React.js", "Context API", "Tailwind CSS"],
+    company: "BrightPixel Agency",
+    description: `Developed reusable UI components for multiple client sites. Refactored old code to improve Lighthouse performance scores. Ensured responsive layouts across mobile and desktop.`,
+    technologies: ["React.js", "Performance Optimization", "Responsive Design"],
   },
   {
     year: "Sep 2022 - Feb 2023",
     role: "Frontend Developer (Freelance)",
     company: "Stoa School",
-    description: `Implemented authentication flows, payment UI, and subscription pages. Improved overall UX with smoother navigation and reduced API overhead through client-side caching.`,
+    description: `Implemented authentication flows, payment UI, and subscription pages. Improved overall UX with smoother navigation and reduced API overhead by adding client-side caching.`,
     technologies: ["React.js", "Caching", "UX Improvements"],
   },
   {
     year: "Apr 2022 - Jun 2022",
     role: "Frontend Developer (Freelance)",
-    company: "Bluelearn",
-    description: `Developed dashboard panels, charts, and analytics pages for a learning management platform. Migrated class scheduling module from AngularJS to React.js and integrated Socket.io for live attendance and lecture updates.`,
-    technologies: ["React.js", "TailwindCSs", "Socket.io"],
+    company: "NordicWare Solutions",
+    description: `Built a supply-chain tracking dashboard using React.js. Integrated REST APIs and optimized state management. Improved table rendering and performance for large datasets.`,
+    technologies: ["React.js", "REST APIs", "State Management"],
   },
 ];
+
 
 
 export const PROJECTS = [
@@ -116,6 +117,6 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Ranchi , Jharkhand - India 835217",
+  // address: "Ranchi , Jharkhand - India 835217",
   email: "iamvishukr@gmail.com",
 };
