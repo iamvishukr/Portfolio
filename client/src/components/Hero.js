@@ -36,7 +36,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.5, delay: 0 }}
-              className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-8xl "
+              className="pb-15 text-4xl font-thin tracking-tight lg:mt-16 lg:text-8xl "
             >
               Vishal Kumar Singh
             </motion.h1>
