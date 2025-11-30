@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/ProfilePic2.png";
+import profilePic from "../assets/profilepic1.png";
 import { motion } from "framer-motion";
 import { useSpring } from "framer-motion";
 
@@ -38,7 +38,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0 }}
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl "
             >
-              Vishal Kumar
+              Vishal Kumar Singh
             </motion.h1>
             <motion.span
               variants={container(0.5)}

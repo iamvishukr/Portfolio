@@ -1,5 +1,5 @@
 import { ABOUT_TEXT } from "../constants";
-import about from "../assets/about2.png";
+import about from "../assets/about.png";
 import { motion } from "framer-motion";
 const About = () => {
   const iconVariants = (duration) => ({

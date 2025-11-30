@@ -19,21 +19,42 @@ Feel free to explore my portfolio to see some of the exciting projects I've work
 
 export const EXPERIENCES = [
   {
-    year: "Nov 2023 - Jan 2024",
-    role: "Frontend Developer Intern",
-    company: "The Website Makers",
-    description: `Collaborated with a dynamic team at Website Makers during an internship, contributing to the successful fulfillment of client
-                  demands for website development.`,
-    technologies: ["HTML", "Javascript", "React", "WordPress"],
+    year: "Aug 2025 - Nov 2025",
+    role: "Frontend Developer (Freelance)",
+    company: "Studio7",
+    description: `Built a complete ERP system for inventory, clients, invoices, and task tracking. Implemented a modular component architecture to ensure scalability and future expansion.`,
+    technologies: ["React.js", "Redux", "Component Architecture"],
   },
   {
-    year: "July 2022 - Apr 2023",
-    role: "Scholar Trainee",
-    company: "Wipro",
-    description: `I worked as a web developer, where I focused on building and enhancing components for various projects using React and JavaScript. My role involved creating responsive and user-friendly interfaces, ensuring that everything was seamless and efficient. `,
-    technologies: ["React", "Javascript", "HTML", "Tailwind", "Redux"],
+    year: "Nov 2024 - Apr 2025",
+    role: "Frontend Developer (Contract)",
+    company: "PW (PhysicsWallah)",
+    description: `Developed interactive UI components for internal LMS dashboards using React.js and Redux Toolkit. Optimized rendering and API calls, reducing page load time by 38%. Collaborated with backend teams to integrate real-time student data and enhance performance for high-traffic pages.`,
+    technologies: ["React.js", "Redux Toolkit", "API Optimization"],
+  },
+  {
+    year: "Feb 2024 - Jul 2024",
+    role: "Frontend Developer (Contract)",
+    company: "Byju’s",
+    description: `Revamped the onboarding UI for the student learning app using React.js, Context API, and Tailwind CSS. Built a modular component library to standardize design across multiple Byju’s products. Implemented role-based UI restrictions and secure frontend routing.`,
+    technologies: ["React.js", "Context API", "Tailwind CSS"],
+  },
+  {
+    year: "Sep 2022 - Feb 2023",
+    role: "Frontend Developer (Freelance)",
+    company: "Stoa School",
+    description: `Implemented authentication flows, payment UI, and subscription pages. Improved overall UX with smoother navigation and reduced API overhead through client-side caching.`,
+    technologies: ["React.js", "Caching", "UX Improvements"],
+  },
+  {
+    year: "Apr 2022 - Jun 2022",
+    role: "Frontend Developer (Freelance)",
+    company: "Bluelearn",
+    description: `Developed dashboard panels, charts, and analytics pages for a learning management platform. Migrated class scheduling module from AngularJS to React.js and integrated Socket.io for live attendance and lecture updates.`,
+    technologies: ["React.js", "TailwindCSs", "Socket.io"],
   },
 ];
+
 
 export const PROJECTS = [
   {
@@ -96,5 +117,5 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Ranchi , Jharkhand - India 835217",
-  email: "iamvishukr.dev@gmail.com",
+  email: "iamvishukr@gmail.com",
 };
