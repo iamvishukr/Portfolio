@@ -118,5 +118,5 @@ export const PROJECTS = [
 
 export const CONTACT = {
   // address: "Ranchi , Jharkhand - India 835217",
-  email: "iamvishukr@gmail.com",
+  email: "vishalkrsingh2304@gmail.com",
 };
